@@ -1,0 +1,263 @@
+:root{
+    --shadow-hover: 0px 15px 59px -7px #000000, 5px -25px 50px -30px rgba(0,0,0,0);
+  }
+body{
+    text-transform: capitalize;
+    background: radial-gradient(circle, rgba(0,0,0,0.301170541458771) 8%, rgba(157,157,157,0.11349547143075978) 82%);
+    background-color: rgb(100, 100, 97);   
+    height: 100%;
+    width: inherit;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pokedex {
+    box-shadow: 3px 5px 50px -7px rgb(196, 193, 193);
+    box-shadow: var(--shadow-hover);
+    align-items: center;
+    width: 500px;
+    height: 850px;
+    background:  rgba(255,41,41, 1);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 15px 15px 15px 90px ;
+    border-width: 6px;
+    border-style: groove;
+    font-size: 16px;
+}
+.row-center {
+    justify-content: center;
+}
+form label {
+    box-shadow: 0px 1px 4px 1px black;
+    text-shadow: 3px 3px 3px black;
+    color: gold;
+    border: rgba(244, 248, 21, 0.596);
+    border-style: solid;
+    background-color: rgb(143, 137, 137);
+    padding: 5px 9px 5px 9px;
+    border-radius: 30px;
+    font-family: 'Notable', sans-serif;
+    font-weight: 300;
+    
+}
+form input {
+    box-shadow: 2px 2px 1px 1px black;
+    background-color: rgba(156, 255, 7, 0.808);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 7px;
+    padding-left: 15px;
+    
+
+}
+#pokeContainer {
+    z-index: 0;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-right-style: groove;
+    border-right-width: 7px;
+    border-right-color: rgb(73, 73, 73);
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-top: solid;
+    border-top-width: 3px;
+    background: rgb(67,110,17);
+    background: linear-gradient(16deg, rgba(100, 104, 100, 0.192) 15%, rgba(255,255,255,0.018) 60%),
+    linear-gradient(16deg, rgba(253, 251, 251, 0.205) 50%, rgba(255,255,255,0.018) 60%),
+    linear-gradient(160deg, rgba(67,110,17,0) 93%, rgba(100, 8, 8, 0.396) 100%),
+    linear-gradient(90deg, rgba(67,110,17,0) 96%, rgba(0,0,0,0.32) 100%),
+    linear-gradient(300deg, rgba(255, 255, 255, 0.068) 95%, rgba(117, 116, 116, 0.212) 97%),
+    linear-gradient(200deg, rgba(248, 248, 248, .05) 90%, rgba(153, 151, 151, 0.397) 100%);
+    background-color:  rgba(156, 255, 7, 0.808);
+    font-family: 'Orbitron', sans-serif;
+    height: 680px;
+    width: 100%;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px gray;
+}
+#screen {
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: inherit;
+    height: inherit;
+    background: rgb(0,0,0);
+    background: linear-gradient(210deg, rgba(0, 0, 0, 0.274) 1%, rgba(226, 226, 226, 0.287) 29%, rgba(157,157,157,0.2843638187696954) 68%),rgba(104, 103, 103, 0.1) 50%;   
+}
+
+/* total width */
+#screen::-webkit-scrollbar {
+    background-color:rgba(243, 0, 0, 0);
+    width:8px;
+    height: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+#screen::-webkit-scrollbar-track {
+    background-color:rgba(252, 252, 252, 0);
+    margin-bottom: 6px;
+    margin-top: 2px;
+}
+
+/* scrollbar itself */
+#screen::-webkit-scrollbar-thumb {
+    background-color:#533535d7;
+    border-radius:10px;
+    border:4px solid rgba(59, 59, 59, 0.383)
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {display:none}
+
+
+#pokeContainer img{
+    height: 280px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+#pokeContainer p {
+    padding: 0px 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(41, 40, 40, 0.726);
+    color: rgb(85, 85, 85);
+}
+#tag {
+    font-weight: 500;
+    color: rgb(2, 2, 2);
+    text-shadow: 1px 1px 1px black;
+}
+
+.poke-list a{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(63, 68, 65);
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+
+  }
+  
+  .zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+.fa-database {
+    font-size: 200px; 
+    color: rgba(240, 26, 26, 0.726); 
+    text-shadow: 1px 2px 5px dimgray;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.055), 0 0 2px rgba(255, 255, 255, 0.041), 0 0 1px #e600000e;
+    }
+  
+}
+@media only screen and (max-width: 950px){
+    body{
+        padding-top: 0px;
+    }
+    .pokedex {
+        width: 100vw;
+        top: 0px;
+        bottom: 0px;
+        padding: 10px;
+    }
+    #pokeContainer img{
+        height: 240px;
+    }
+    .poke-list a{
+        font-size: 18px;
+    }  
+}
+
+@media only screen and (max-width: 640px){
+
+    #pokeContainer{
+        height: 550px;
+    }
+    #pokeContainer p {
+        margin-bottom: 7px;
+    }
+    #pokeContainer img {
+        height: 210px;
+    } 
+}
+@media only screen and (max-width: 568px){
+
+    #pokeContainer{
+        height: 540px;
+    }
+    #pokeContainer p{
+        margin-bottom: 5px;
+    }
+    #pokeContainer img {
+        height: 200px;
+    }
+     
+}
+
+@media only screen and (max-width: 450px){
+    body{
+        overflow: hidden;
+    }
+    #pokeContainer{
+        height: 450px;
+    }
+    #pokeContainer p{
+        margin-bottom: 2px;
+    }
+    #pokeContainer img {
+        height: 120px;
+    }
+     
+}
+@media only screen and (max-height: 800px){
+    body{
+        overflow: hidden;
+    }
+    #pokeContainer{
+        height: 500px;
+    }
+    #pokeContainer p{
+        margin-bottom: 2px;
+    }
+    #pokeContainer img {
+        height: 120px;
+    }
+     
+}
+@media only screen and (max-height: 600px){
+    body{
+        overflow: hidden;
+    }
+    #pokeContainer{
+        height: 500px;
+    }
+    #pokeContainer p{
+        margin-bottom: 2px;
+    }
+    #pokeContainer img {
+        height: 120px;
+    }
+     
+}
+
+
+
+
+

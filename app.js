@@ -171,6 +171,4 @@ $('#pokeForm').on('submit', function(e) {
             return console.log('Error');
         };
     });
-
-
 });  
